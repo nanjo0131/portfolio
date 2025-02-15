@@ -1,0 +1,875 @@
+body {
+    font-family: Noto Serif JP,"Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans", "Noto Sans", Meiryo, sans-serif;
+    background-color:black;
+    max-width:1920px;
+    height:4100px;
+    margin:0;
+    padding:0;
+    color:white;
+    
+}
+main {
+    margin: 0;
+    padding:0;
+    font-family: Noto Serif JP;
+}
+
+/* ファーストビュー  */
+.first-view {
+    width: auto;
+    height:auto;
+    position: relative;
+    margin:0;
+}
+.main-visual {
+    width: 100%;
+    height: 100%;
+}
+.book-bottom {
+    position: absolute;
+    left:0;
+    bottom:4px;
+    background-color:#316745;
+    display: inline-block;
+    padding:30px 50px;
+    margin: 0;
+    font-weight: bold;
+    color:#fff
+}
+.book-bottom:hover {
+    background-color:#02533B ;
+}
+
+/* ヘッダ－ */
+header {
+    margin: 0;
+    width:100%;
+    height:70px;
+    position: absolute;
+    top:0;
+    z-index: 50;
+    background-color: rgba(0, 0, 0, .5);
+}
+.logobox {
+    height:70px;
+    margin-left:40px;
+    margin-top:5px;
+}
+.logo {
+    width:160px;
+   height:60px;
+}
+.navGlobal {
+    width: 100%;
+    height:100%;
+    color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+}
+.header-right {
+    display: flex;
+    margin: 50 0 50 50;
+}
+.header-right li{
+    list-style: none;
+    color: black;
+    margin: 0 50px;
+}
+.header-right li a {
+    text-decoration: none;
+    color:white;
+    white-space: nowrap;
+    font-size:18px;
+}
+.header-right :hover {
+    color:#C7B370;
+}
+/* スマホナビゲーション非表示 */
+@media  screen and (min-width:768px) {
+    #sp-navarea {
+        display: none;
+    }
+}
+
+/* お知らせ */
+/* section 2 */
+.section1 {
+    margin :0;
+}
+#notice-title {
+   text-align: center;
+    color:white;
+    font-size: 12px;
+}
+/* タイトル下線 */
+.underline {
+    display: inline-block;
+    border-bottom: solid 3px #316745;
+    padding-bottom: 15px;
+}
+.notice-box {
+    display: flex;
+    justify-content: space-around;
+} 
+
+.notice1 {
+    width:250px;
+    height:200px;
+    color:#fff;
+ 
+}
+.notice1-image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.notice1-text {
+    margin:0;
+}
+.notice2 {
+    width:250px;
+    height:200px;
+    color:#fff;
+}
+.notice2-image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.notice2-text {
+    margin:0;
+    color:#fff;
+}
+.notice3 {
+    width:250px;
+    height:200px;
+}
+.notice3-image {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.notice3-text {
+    margin:0;
+    color:#fff;
+}
+
+
+ /* 温泉 */
+ /* section2 */
+ .section2 {
+
+ }
+ #hotspring-title {
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    font-size: 14px;
+}
+ /* 露天風呂 */
+ .rotenburo-box {
+    display: flex;
+    width:auto;
+ }
+.hotspring1-imgbox {
+    width: 60%;
+    height: 80%;
+    margin:0 auto;
+    padding:0;
+}
+.hotspring1-img {
+    width:100%;
+    height: 100%;
+}
+.rotenburo-title {
+    margin:20px 0 0 20px;
+    padding-left:10px;
+    font-size: 2rem;
+    color:#C7B370;
+    border-left:solid 8px #316745;
+}
+.rotenburo-group {
+    width: 50%;
+}
+.rotenburo-about {
+    padding:20px;
+}
+.rotenburo-text {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+    padding-left: 20px;
+}
+/* 大浴場 */
+.daiyokujo-box {
+    display: flex;
+    margin:0 auto; 
+}
+.daiyokujo-group {
+    display: block;
+    width:50%;
+}
+.daiyokujo-title {
+    text-align: right;
+    margin:20px 20px 0 0;
+    padding-right:10px;
+    font-size: 2rem;
+    color:#C7B370;
+    border-right:solid 8px #316745;
+}
+.daiyokujo-about {
+    padding:20px;
+    
+}
+.daiyokujo-text {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+    color:white;
+    padding-left: 20px;
+}
+.daiyokujo-imgbox {
+    width: 50%;
+    height:80%;
+} 
+.daiyokujo-img {
+    width:100%;
+    height: 100%;  
+}
+/* お食事 */
+/* section3 */
+.section3 {
+    background-color:#F0DCBD;
+}
+#food-title {
+    text-align: center;
+    color:#C7B370;
+    margin-top: 15px;
+    font-size: 16px;
+}
+/* お食事１ */
+.food1-box {
+    display: flex;
+}
+.food1-group {
+    display: block;
+    width: 50%;
+}
+.food1-imgbox {
+    width:50%;
+    height:50%;
+    margin-left:20px;
+}
+.food1-img {
+    width:100%;
+    height:100%;
+    box-shadow: 20px 20px #316745;
+}
+.food1-title {
+    font-weight: bold;
+    margin:30px 0 0 30px;
+    padding-left:10px;
+    font-size: 2rem;
+    color:#C7B370;
+    border-left:solid 8px #316745;
+}
+.food1-about {
+    padding:20px;
+}
+.food1-text {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+    color:black;
+    margin:20px
+}
+/* お食事２ */
+.food2-box {
+    display: flex;
+}
+.food2-group {
+    display: block;
+    width: 50%;
+}
+.food2-about {
+    padding:20px;
+}
+.food2-title {
+    font-weight: bold;
+    text-align: right;
+    margin:30px 30px 0 0;
+    padding-right:10px;
+    font-size: 2rem;
+    color:#C7B370;
+    border-right:solid 8px #316745;
+}
+.food2-text {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+    color:black;
+    margin:20px
+}
+.food2-imgbox {
+    width:50%;
+    height:50%;
+    margin-right:20px;
+}
+.food2-img {
+    width:100%;
+    height:100%;
+    box-shadow: -20px 20px #316745;
+}
+/* お部屋 */
+#room-title {
+    text-align: center;
+    color:white;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.roombox {
+    display: flex;
+}
+/* お部屋１左 */
+.room1-box {
+    display: block;
+    width: 50%;
+    height:50%;
+    margin:20px;
+}
+.room1-imgbox {
+    width: 100%;
+    height:310px;
+}
+.room1-img {
+    width: 100%;
+    height:100%;
+}
+.room1-group {
+    text-align: center;
+}
+.room1-title {
+    color:#C7B370;
+    font-size: 20px;
+}
+.room1-text {
+    margin:50px;
+    text-align: left;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+}
+/* お部屋２右*/
+.room2-box {
+    display: block;
+    width: 50%;
+    height:50%;
+    margin:20px;
+}
+.room2-imgbox {
+    width: 100%;
+    height:310px;
+}
+.room2-img {
+    width: 100%;
+    height:100%;
+}
+.room2-group {
+    text-align: center;
+}
+.room2-title {
+    color:#C7B370;
+    font-size: 20px;
+}
+.room2-text {
+    margin:50px;
+    text-align: left;
+    letter-spacing: 0.12em;
+    line-height: 2.0;
+}
+ /* 宿泊予約 */
+ .reservation {
+    background-color: #C7B370;
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .reservation-text {
+    font-size: 30px;
+    font-weight: bold;
+    color:#316745;
+    text-shadow: 1px 1px #F0DCBD;
+    
+ }
+  input[type="date"] {
+    position: relative;
+    padding: 0 10px;
+    width: 200px;
+    height: 36px;
+    border: 0;
+    /* background: transparent; */
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #316745;
+  }
+  form {
+    display: flex;
+    height:auto;
+    margin-top:35px;
+  }
+  .lavel1 {
+    color:black;
+  }
+  .lavel2 {
+    color:black;
+  }
+  .selectbox-3 {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+}
+/* 逆ポインター */
+.selectbox-3::after {
+    position: absolute;
+    right: 15px;
+    width: 10px;
+    height: 8px;
+    background-color: #202020;
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    content: '';
+    pointer-events: none;
+}
+.selectbox-3 select {
+    appearance: none;
+    min-width: 30px;
+    height: 36px;
+    padding: .4em calc(.8em + 30px) .4em .8em;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    color: #000000;
+    font-size: 1em;
+    cursor: pointer;
+    margin-left:10px;
+}
+/*検索ボタン*/
+#sbtn2{
+    width:70px;
+    background:#316745;
+    border:none;
+    color:#fff;
+    font-size:15px;
+    cursor: pointer;
+    height:40px;
+    margin-left:20px;
+  }
+  #sbtn2:hover{
+  background: #92dbff;/
+  }
+
+  /* フッター */
+  footer {
+   
+  }
+  .footer1 {
+    display: flex;
+    justify-content: space-around;
+    margin:0 auto;
+  }
+.hotel-name {
+    width:30%;
+    margin-top:30px;
+}
+.footer-logobox {
+    height:70px;
+}
+.footer-logo {
+    width:160px;
+    height:60px;
+}
+.official {
+    margin-top:0;
+}
+
+/* 各タグ */
+.title-summary {
+    width:30%;
+    height:30%;
+    display: flex;
+    font-size:20px;
+    margin-top:20px;
+}
+.title-summary > .summary1 > a:hover {
+    color:#C7B370;
+}
+.title-summary > .summary1 > a{
+    color:#ffffff;
+    text-decoration: none;
+    display: block;
+    padding:20px;
+}
+.title-summary > .summary2 > a:hover {
+    color:#C7B370;
+}
+.title-summary > .summary2 > a{
+    color:#ffffff;
+    text-decoration: none;
+    display: block;
+    padding:20px;
+}
+.summary2 {
+    margin-left:20px;
+}
+.access {
+    width:30%;
+    height:30%;
+}
+.access-title {
+    font-size:20px;
+}
+.train {
+    font-size: 20px;
+    color:#C7B370;
+    margin-bottom:0;
+}
+.toukai {
+    margin-top:0;
+}
+.car {
+    font-size: 20px;
+    color:#C7B370;
+    margin-bottom:0;
+    padding-top:10px;
+}
+.toumei {
+    margin-top:0;
+}
+.toukai::before {
+    content: "■";
+    color:#316745;
+    font-size:23px;
+}
+.toumei::before {
+    content: "■";
+    color:#316745;
+    font-size:23px;
+}
+.Copyright{
+    display: block;
+    text-align: center;
+}
+.Copyright small {
+    /* position: absolute;
+    bottom:0; */
+    color:#ffffff;
+   
+}
+
+
+/* スマホ用 */
+@media  screen and (max-width:767px) {
+    .body {
+        max-height:5000px;
+    }
+    .header-right {
+        display: none;
+    }
+    .first-view {
+        width:100%;
+        height:80%;
+    }
+    .book-bottom {
+        padding: 15px 25px;
+    }
+    /* スマホハンバーガーメニュー */
+    .sp-nav {
+        display: block;
+        width:100%;
+        position:fixed;
+        background-color: #000000;
+        top:0;
+        left:-1000px;
+        bottom:0;
+        transition:all 0.5s;
+        z-index: 99;
+        opacity:1;
+    }
+    #sp-navarea {
+        /* position: fixed;
+        z-index: 100; */
+    }
+    .open .sp-nav {
+        left:0;
+        opacity: 1;
+    }
+    .sp-navinner {
+        padding:25px;
+    }
+    .sp-navinner ul {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+    .sp-navinner ul li {
+        margin:0;
+        border-bottom: 1px solid #fff;
+    }
+    .sp-navinner ul li a {
+        display: block;
+        text-decoration: none;
+        color:#fff;
+        font-size: 14px;
+        padding:1rem;
+        transition-duration: 0.2s;
+    }
+    .sp-navinner ul li a:hover {
+        background-color: #e4e4e4;
+    }
+    .toggle-btn {
+        display: block;
+        position:fixed;
+        top:20px;
+        right:20px;
+        width:30px;
+        height:30px;
+        z-index: 100;
+        cursor:pointer;
+    }
+    .toggle-btn span {
+        position:absolute;
+        display: block;
+        left:0;
+        width:30px;
+        height: 2px;
+        background-color: #fff;
+        transition: all 0.5s;
+        border-radius:4px;
+    }
+
+    .toggle-btn span:nth-child(1) {
+        top:4px;
+    }
+    .toggle-btn span:nth-child(2) {
+        top:14px;
+    }
+    .toggle-btn span:nth-child(3) {
+        bottom:4px;
+    }
+    .open .toggle-btn span{
+        background-color: #fff;
+    }
+    .open .toggle-btn span:nth-child(1) {
+        transform: translateY(10px) rotate(-315deg);
+    }
+    .open .toggle-btn span:nth-child(2) {
+       opacity: 0;
+    }
+    .open .toggle-btn span:nth-child(3) {
+        transform: translateY(-10px) rotate(315deg);
+    }
+    /* スマホ用お知らせ */
+    .notice-box {
+        display: block;
+    }
+    .notice-box div {
+        margin:0 auto;
+    }
+    .notice1 {
+        width:80%;
+        height:50%;
+    }
+    .notice1-image {
+        width:100%;
+        height:100%;
+       
+    }
+    .notice2 {
+        display: none;
+        
+    }
+    .notice3 {
+        display: none;
+    }
+    /* スマホ用露天風呂 */
+    .rotenburo-box {
+        display: block;
+    }
+    .hotspring1-imgbox {
+        width:100%;
+        height:50%;
+    }
+    .rotenburo-about {
+
+    }
+    .rotenburo-group {
+        width:100%;
+    }
+      /* スマホ用大浴場 */
+    .daiyokujo-box {
+        display: block;
+    }
+    .daiyokujo-group {
+        width: 100%;
+    }
+    .daiyokujo-imgbox {
+        width:100%;
+        height:50%;
+    }
+    /* スマホ用お食事１ */
+    .food1-box {
+        display: block;
+    }
+    .food1-group {
+        width:100%;
+    }
+    .food1-imgbox {
+        width:85%;
+        height:50%;
+    }
+    .food1-about {
+        padding-bottom:0;
+    }
+    /* スマホ用お食事 */
+    .food2-box {
+        display: block;
+    }
+    .food2-group {
+        width:100%;
+    }
+    .food2-imgbox {
+        width:85%;
+        height:50%;
+        margin:0 auto;
+    }
+    .food2-title {
+        margin-top:0;
+    }
+    #hotspring-title {
+        margin-top: 0;
+    }
+    #room-title {
+        margin-top: 0;
+    }
+    .roombox {
+        display: block;
+
+    }
+    .room1-box {
+        width:100%;
+        margin:0;
+    }
+    .room1-imgbox {
+        width:100%;
+    }
+    .room2-box {
+        width:100%;
+        margin:0;
+    }
+    .room2-imgbox {
+        width:100%;
+    }
+    /* 宿泊予約 */
+    .reservation {
+        display: block;
+     }
+     .reservation-text {
+        margin:0 auto;
+        
+     }
+     .lavelgroup {
+        display: flex;
+     }
+     .lavelgroup2 {
+        margin-top:10px;
+     }
+     input[type="date"] {
+        width: 160px;
+      }
+    form {
+        display: block;
+    }
+    /* フッター */
+    .footer1 {
+        display: block;
+        width:100%;
+    }
+    
+    .hotel-name {
+        width:100%;
+        height:80%;
+        margin:0;
+        padding-top:20px;
+        padding-bottom:20px;
+        text-align: center;
+    }
+    .hotel-name p {
+        font-size:1.3rem;
+    }
+    .footer-logobox {
+        width:50%;
+        height:20%;
+        margin: 0 auto;
+    }
+    .footer-logo {
+        width:100%;
+        height:100%;
+    }
+/* フッター各リンク */
+    .title-summary {
+        width:100%;
+        height:80%;
+        text-align: center;
+    }
+    .title-summary > .summary1 > a{
+        padding:10px;
+        color:#C7B370;
+    }
+    .title-summary > .summary2 > a{
+        padding:10px;
+        color:#C7B370;
+    }
+    .summary1 {
+        width:50%;
+    }
+    .summary2 {
+        width:50%;
+    }
+/* アクセス */
+.access {
+    width:80%;
+    height:80%;
+    margin:30px;
+}
+.access-title {
+    font-size:20px;
+    text-align: center;
+}
+.train {
+    font-size: 20px;
+    color:#C7B370;
+    margin-bottom:0;
+}
+.toukai {
+    margin-top:0;
+}
+.car {
+    font-size: 20px;
+    color:#C7B370;
+    margin-bottom:0;
+    padding-top:10px;
+}
+.toumei {
+    margin-top:0;
+}
+.toukai::before {
+    content: "■";
+    color:#316745;
+    font-size:23px;
+}
+.toumei::before {
+    content: "■";
+    color:#316745;
+    font-size:23px;
+}
+  
+}
