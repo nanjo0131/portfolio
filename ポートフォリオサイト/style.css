@@ -1,0 +1,482 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color:white;
+}
+
+body {
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url("./img/galaxy-night-landscape.jpg");
+    background-size: cover;
+}
+header {
+    width: 100%;
+    height:100px;
+   margin: auto;
+   position: absolute;
+   right: 0;
+   top: 0;
+   z-index: 50;
+}
+nav {
+    text-align: center;
+    padding:20px 60px;
+}
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+nav ul li {
+    color:black;
+    list-style: none;
+    /* margin-left:70px; */
+    padding: 0 40px;
+    font-size: 0.8rem;
+}
+nav ul li a {
+    text-decoration: none;
+}
+
+
+.title {
+    position:absolute;
+    top:15%;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:2;
+    font-size:1.2rem;
+    opacity: 0;
+}
+
+.title.active {
+    opacity:1;
+    transition: 3s;
+}
+section {
+    position:relative;
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.firstview-wrap {
+    width:200px;
+    height:100px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+.firstview-wrap img {
+    width:100%;
+    height:100%;
+}
+.img-wrap {
+    position: relative;
+    top:40%;
+    height:50%;
+    width:1px;
+    overflow: hidden;
+    opacity:0;
+    border-radius: 10px;
+
+}
+.img-wrap.active {
+    width:40vw;
+    opacity:1;
+    transition: opacity 1s, width 2s;
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.6);
+}
+.img-wrap.title.active > .img {
+    transform:scale(1);
+    transition: 1s ease-out;
+}
+h2 {
+    color:#fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:10px 0;
+}
+h3 {
+    color:#fff;
+    font-size: 1.5rem;
+    text-align: center;
+    margin:0;
+}
+.sec2 h3 {
+    margin:0;
+}
+#sec {
+    position: relative;
+}
+#sec .first-text {
+    width: 400px;
+    height:100px;
+    position: absolute;
+    top:50%;
+    left:25%;
+    /* transform: translate(-50%); */
+    white-space: nowrap;
+    
+}
+#sec .first-text p{
+    font-size: 10px;
+    letter-spacing: 3px;
+    line-height: 25px;
+    text-align: center;
+    position: relative;
+}
+.arrow-wrap {
+    position: absolute;
+    left:50%;
+    bottom:5%;
+    transform: translate(-50%);
+}
+.arrow_u {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+  }
+  .arrow_u:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 0;
+    border-bottom: solid 2px #fff;
+    border-right: solid 2px #fff;
+    transform: rotate(45deg);
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    
+    margin:auto;
+  }
+#sec1 {
+   position: relative;
+}
+
+.icon-group1 {  
+    margin:30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+.icon-group2 {
+    margin:30px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+.icon {
+    width: 10%;
+    height:20%;
+    margin:15px;
+}
+#sec1 .skill {
+    margin:0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    height:80%;
+    backdrop-filter:(20px);
+    border-radius:15px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    -webkit-backdrop-filter: blur(30px);
+}
+
+/* SECTION2 */
+#sec2 {
+    position: relative;
+}
+#sec2 .text-box {
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1);
+    padding:30px;
+    width: 300px;
+    height:60vh;
+    backdrop-filter:(20px);
+    border-radius:10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top:20%;
+    left:15%;
+}
+.text-box h4 {
+   font-size: 1.2rem;
+   margin-bottom: 5px;
+}
+.text-box p {
+    font-size: 10px;
+}
+h5 {
+    font-size: 0.8em;
+    margin-top:10px;
+}
+.sec2 .btn {
+
+}
+
+/* SECTION 3 */
+.sec3 h2 {
+    position: absolute;
+    
+}
+.sec3 .text-box {
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1);
+    padding:30px;
+    width: 300px;
+    height:50vh;
+    backdrop-filter:(20px);
+    border-radius:10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top:20%;
+    right:15%;
+}
+
+/* SECTION 4 */
+.sec4 {
+    position: relative;
+}
+.sec4 .banner-wrap {
+  position: absolute;
+  top:10%;
+  right:20%;
+} 
+.banner-wrap .banner1{
+    width: 200px;
+    height: 150px;
+    margin:20px;
+}
+.banner-wrap .banner1 img{
+    width: 100%;
+    height: 100%;
+}
+.banner-wrap .banner2{
+    width: 200px;
+    height: 150px;
+    margin:20px;
+}
+.banner-wrap .banner2 img{
+    width: 100%;
+    height: 100%;
+}
+.sec4 .text-box {
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1);
+    padding:30px;
+    width: 35%;
+    height:85vh;
+    backdrop-filter:(20px);
+    border-radius:10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    bottom:0%;
+    left:10%;
+}
+
+/* SECTION5 */
+.sec5 {
+    position: relative;
+    margin-bottom:100px;
+}
+.sec5 .sec5-imgwrap {
+    position: absolute;
+    top:35%;
+    left:10%;
+    width: 300px;
+    height: 200px;
+    
+}
+.sec5 .sec5-imgwrap img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 10px #fff;
+
+}
+.sec5 .text-box {
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.1);
+    padding:30px;
+    width: 300px;
+    height:240px;
+    backdrop-filter:(20px);
+    border-radius:10px;
+    border-radius: 1px solid rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top:30%;
+    right:10%;
+}
+
+/* フッター */
+footer {
+    background-color: black;
+    height:100px;
+    position: relative;
+}
+h6 {
+    color:white;
+    margin:30px;
+    position: absolute;
+    top:5%;
+    left:5%;
+    font-size: 1.2rem;
+}
+footer p {
+    color:white;
+    margin:30px;
+    position: absolute;
+    top:10%;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+/* フッター */
+.Copyright{
+    position: absolute;
+    left:50%;
+    bottom:0;
+    transform: translateX(-50%);
+}
+.Copyright small {
+    color:#ffffff;
+    font-size: 7px;
+   
+}
+
+
+/* Checkボタン */
+a.btn {
+    padding: 1rem;
+    color: #614f38;
+    font-size:1.0rem;/* font-size:62.5%; // 62.5% = 1rem = 10px */
+    position: absolute;
+    top:85%;
+    left:35%;
+    text-decoration: none;
+    transition: .15s ease-out;
+    -webkit-transform: translateZ(0);
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 3rem;
+    padding: 1.0rem 3rem 1.0rem 1rem;
+    color: inherit;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+  /* // arrow */
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+  }
+  &:before {
+    right: 2rem;
+    width: .7rem;
+    height: 1px;
+    background: #fff;
+  }
+  &:after {
+    right: 20px;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+  }
+  &:hover {
+    color:#fff;
+    background-color: #5c85dd;
+    transform: translateY(2px);
+    opacity: 1;
+    &:before {
+      background-color: #fff;
+    }
+    &:after {
+      border-color: #fff;
+    }
+  }
+}
+a.btn2 {
+    padding: 1rem;
+    color: #614f38;
+    font-size:1.0rem;/* font-size:62.5%; // 62.5% = 1rem = 10px */
+    position: absolute;
+    top:75%;
+    right:35%;
+    text-decoration: none;
+    transition: .15s ease-out;
+    -webkit-transform: translateZ(0);
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid;
+    border-radius: 3rem;
+    padding: 1.0rem 1rem 1.0rem 3rem;
+    color: inherit;
+    text-align: center;
+    line-height: 1;
+    text-decoration: none;
+  /* // arrow */
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+  }
+  &:before {
+    left: -2.8rem;
+    width: .7rem;
+    height: 1px;
+    background: #fff;
+  }
+  &:after {
+    left: -4.5rem;
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    color:#fff;
+    background-color: #5c85dd;
+    transform: translateY(2px);
+    opacity: 1;
+    &:before {
+      background-color: #fff;
+    }
+    &:after {
+      border-color: #fff;
+    }
+  }
+}
